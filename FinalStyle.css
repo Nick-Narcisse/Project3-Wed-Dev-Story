@@ -1,0 +1,263 @@
+html { 
+	scroll-behavior: smooth; 
+	height: 100%;/*vh stands for viewpoint height which means the height will be equal to 100% of the viewport. So whatever screen is being used to view it will be able to see it entirely */
+	width: 100%;
+	background-color: #FFFFFF;
+	background-size:  cover;
+	background-position:  center;
+	overflow: visible;
+ } 
+
+
+}
+
+nav{
+	display: flex; /*fills up empty space*/
+	align-items:  center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-right: 0%;
+
+
+}
+
+nav ul li{  /*changes nav, ul, and li tags*/
+	list-style-type:  none;
+	display: inline-block;
+	margin-right: 80px;
+	padding-left: 20px;
+	font-size: 20px;	
+
+}
+
+nav ul li a{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	font-weight:  bold;
+	text-transform: capitalize;
+	font-size: 17px;
+	font-family: "Garamond";
+}
+
+nav ul li a:hover{
+	color: turquoise;
+	transition: .4s;
+}
+
+/*Company name*/
+.title{
+	color: white; 
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-family: "Garamond";
+	
+}
+
+
+/*company logo*/
+.title img{
+	height:5%;
+	width:5%;
+}
+
+span {
+	color: turquoise;
+}
+
+
+.homepic{
+	color: black;
+	text-decoration: none;
+	font-weight:  bold;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.homepic img{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+\
+
+}
+
+
+
+
+
+
+/*Start of slide show css*/
+/* sets up the appropriate proportions for the images*/
+.slider{
+  width: 100%;
+  height: 500px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+
+
+/* sets up the appropriate proportions for the images*/
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+
+/* sets up the appropriate proportions for the images*/
+.slides input{
+  display: none;
+}
+
+
+/* sets up the appropriate proportions for the images*/
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-mannual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+/*the btns for displaying what slide its on */
+.mannual-btn{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+.mannual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.mannual-btn:hover{
+  background-color: #ccc;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* Automatic Navigation */
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+  margin-left: 30%;
+}
+
+
+.navigation-auto div{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn-1{
+  background: #ccc;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn-2{
+  background: #ccc;
+}
+
+
+#radio3:checked ~.navigation-auto .auto-btn-3{
+  background: #ccc;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn-4{
+  background: #ccc;
+}
+
+/* end of slide show css*/
+
+/* the bar in the middle, used to seperate the page*/
+.midbar{
+	background-color: #1f1d1d;
+	color: white;
+	position:relative;
+	padding: 10px 1px;
+	width:100%;
+	letter-spacing: 1px;
+	line-height: 25px;
+	font-size: 20px;
+	font-family: "Courier New";
+	
+}
+
+
+
+
+.summary{
+	padding-right: 100px;
+	padding-left: 100px;
+	font-size: 20px;
+	padding-bottom: 50px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+
+
+
+.container{ 
+	height:10;
+	width:100%;
+	color:black;
+	font-size:20px;
+}
+
+
+
+table, td{
+
+	position: relative;
+	width:100vh;
+}
+
+footer {
+  text-align: center;
+  width:99.4%;
+  background-color: #1f1d1d;
+  color: white;
+  border-radius: px;
+  position: relative;
+  margin-top: 0%;
+
+}

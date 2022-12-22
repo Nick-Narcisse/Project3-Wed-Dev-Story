@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<title>New Jersey Clean Up</title>
+		
+		<link rel = "stylesheet" type = "text/css" href="FinalStyle.css"> <!-- Refers to the css style sheet which contains all the css i did for this page -->
+
+		<!-- google api need for the two fonts in use -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Slab:wght@100;200&display=swap" rel="stylesheet">
+
+		<!--Bootstrap to make the webpage look more polished-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<script>
+			/*Script that helps to run the slide show */
+		    var counter = 1;
+		    setInterval(function()  {
+		      document.getElementById('radio'+ counter).checked = true;
+		      counter++; 
+
+		      if(counter>3){
+		        counter=1
+		      }
+		      
+		     /* The time it takes for the slide to go to the next, currently set to 5000 which is 5 seconds */
+		    }, 5000);
+	  	</script>
+	</head>
+
+
+
+
+	<body>
+
+		<!---Navigation bar at the top of the screen  -->
+		<div class = "main" id = "home">
+			<header>
+				<nav class = "navbar navbar-light" style= "background-color: black;">
+					<ul class = "navbar-nav-ml-auto">
+						<li><h2 class = "title"><img src = "logospiral.png"><i>NJ  <span>Eco</span>logy</i></h2></li>	
+						<li><a href = "#home" >Home</a></li>
+						<li><a href = "#about us" >About Us</a></li>
+						<li><a href = "#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<!--Message at the top of the page -->
+		<div class = "homepic">
+				<h3><center> Help Maintain New Jerseys Natural Parks and Its One of a Kind Beauty </center></h3>
+		</div>
+
+
+
+		<!-- Start of the slide show -->
+
+
+		<div class="slider">
+		  <div class="slides">
+		   <!-- Radio Button Start  -->
+		   <input type="radio" name="radio-btn" id="radio1">
+		   <input type="radio" name="radio-btn" id="radio2">
+		   <input type="radio" name="radio-btn" id="radio3">
+		   <input type="radio" name="radio-btn" id="radio4">
+		      <!-- Radio Button Close  -->
+
+		      <!-- Slide Image Start -->
+		   <div class="slide first">
+		   	<img src="new-jersey-park.jpg" alt="test" style = "width:100%"> 
+		   </div>
+
+		   <div class="slide">
+		   	<img src="norvin.jpg" alt="" style = "width:100%">
+		   </div>
+
+		    <div class="slide">
+		      <img src="pond.jpg" alt="" style = "width:100%">
+		    </div>
+		    <!-- Slide Image Close -->
+
+		      <!-- Automatic Navigation Start -->
+		   <div class="navigation-auto">
+		   	<div class="auto-btn-1"></div>
+		    <div class="auto-btn-2"></div>
+		    <div class="auto-btn-3"></div>
+		   </div>
+		     <!-- Automatic Navigation Close -->
+		  </div>
+		</div>
+
+		
+
+
+		<!--used a seperator for the page -->
+		<div class ="midbar">
+		</div>
+
+
+			<!--the section is used to add more information on to the webpage-->
+			<section>
+
+				<!--ID is put here so that that the navbar can go to it. Uses a summary class in order to have the proper font/spacing-->
+				<div class = "summary" id = "about us">
+					<h2><center>What we do</center></h2>
+					<p> Here at NJ Ecology we strive to make a cleaner and happier New Jersey for all residents. In order to do this we provide information in regards to city services that may otherwise go unnoticed. In addition to this we also provide ways in which you as an individual can make an impact on your community. Below is more information regarding these and if you have any suggestions for us there is a feedback form at the bottom of the page. Now lets make a cleaner New Jersey Together!
+				</div>
+
+
+				<div>
+					<Table class = "table-contents"><!--using a table to help seperate the cards. makes it not only easier but cleaner-->
+						<tr>
+							<td>
+								<!--using the the bootstrap card yet has adjusted parimaters to suit my needs-->	
+								<div class = "card" style = "width: 30rem; margin-left:100px" >
+									<img class ="card-img-top" src="clean-street.jpg" alt = "card image cap">
+									<div class = "card-body">
+										<h3> The impact of clean streets</h3>
+										<p class = "card-text">Various studies show that clealiness is not only good for ones physical health but for their mental health. Learn more by clicking on the links below</p><br><br>
+									</div>
+									<ul class = "list-grou list-group-flush">
+										<li class ="list-group-item"><a href = "https://www.unep.org/news-and-stories/story/caring-environment-helps-care-your-mental-health" target="_blank">Environment care and mental health</a></li>
+										<li class = "list-group-item"><a href = "https://www.forbes.com/health/mind/mental-health-clean-home/" target="_blank">More information regarding cleaning and mental health</a></li>	
+									</ul>
+								</div>
+							</td>
+
+
+
+						<td>
+							<div class = "card" style = "width: 30rem; margin-left:150px" >
+								<img class ="card-img-top" src="garbage.jpg" alt = "card image cap">
+								<div class = "card-body">
+									<h3> How you can make a difference</h3>
+									<p class = "card-text">It all starts with you! Simply throwing out garbage and ensuring theres no spill over is already a big help. If you need help cleaning out a particular land area and are worried about spill over or it simply being too much, you can make contact with the city. Alternatively, you can hire professional cleaners. All necessary links are below</p>
+								</div>
+								<ul class = "list-grou list-group-flush">
+									<li class ="list-group-item"><a href = "https://www.nj.gov/dep/guardyourbackyard/" target="_blank">Information Regarding City help</a></li>	
+									<li class ="list-group-item"><a href = "https://www.cleaningworldinc.com/heavy-duty-house-cleaning-nj/" target="_blank">Hire Private Cleaners</a></li>
+
+								</ul>
+							</div>
+						</td>
+
+						<td>	
+							<div class = "card" style = "width: 30rem; margin-left:120px" >
+								<img class ="card-img-top" src="plastics.jpg" alt = "card image cap">
+								<div class = "card-body">
+									<h3>Onsite Locations</h3>
+									<p class = "card-text">Many cans are not only recyclable but also offer monetary compensation for your efforts. Or if you would like to know where your nearest garbage disposal facility is we also have links for that as well. All of which are provided down below</p><br><br>
+								</div>
+								<ul class = "list-grou list-group-flush">
+									<li class ="list-group-item"><a href = "http://www.recyclerfinder.com/?page=scrap_into_cash" target= "_blank">Find the nearest Recycling center</a></li>
+									<li class ="list-group-item"><a href = "https://www.wm.com/us/en/drop-off-locations" target = "_blank">Find the nearest garbage disposal center</a></li>		
+								</ul>
+							</div>
+						</td>
+
+						</tr>
+					</Table> <!--end of table-->
+				</div>
+
+			</section>
+		<br><!--spacing between footer-->
+
+
+
+
+	<div class = "midbar">
+	<footer>
+		<p> Copyright © 2022 Nick Narcisse</p>
+		<p>All Rights Reserved </p>
+	</footer>
+	</div>
+
+	</body>
+
+
+
+
+
+</html>
